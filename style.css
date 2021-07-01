@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* header manu */
+.fixed-width{
+    width: 1270px;
+    margin:auto;
+}
+.main-head{
+    background: #3498db;
+}
+img{
+    max-width: 100%;
+}
+.header-left img{
+    width: 190px;
+    height: auto;
+}
+.header-left{
+    float: left;
+    width: 30%;
+}
+.header-right{
+    float: right;
+    width: 70%;
+}
+ 
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+    margin-right: -4px;
+}
+
+
+.header-right ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+    line-height: 67px;
+    font-size: 15px;
+    border-right: 1px solid white;
+
+    transition: 0.4s;
+}
+.header-right ul li :hover>a {
+    background: #2980b9;
+}
+
+/* header-rightright Drop down part */
+.header-right ul li{
+    position:relative;
+    
+}
+.header-right ul li ul{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 200px;
+    background: #3498db;
+
+    transition: 0.6s;
+
+}
+.header-right ul li:first-child a{
+    border-left: 1px solid white;
+}
+.header-right ul li ul li{
+    display: block;
+    margin-left: 0px;
+}
+.header-right ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.header-right ul li ul li:first-child a{
+    border-top: 1px solid white;
+   
+}
+/* header right hovar part */
+.header-right a:hover{
+    background: #2980b9;
+}
+.header-right ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-right ul li:hover ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+    
+   
+}
+.center{
+    text-align: center;
+}
+/* banner CSS */
+.banner{
+    background: url(./img/banner.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+    background-attachment: fixed;
+    
+}
+
+.banner-caption h2 {
+    background: rgba(0,0,0,.5);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+}
+.banner-caption h1 {
+    background: rgba(52, 152, 219,0.6);
+    max-width: 458px;
+    margin: auto;
+        margin-top: auto;
+    font-size: 40px;
+    margin-top: 24px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    color: white;
+}
+/* about section */
+.about {
+    margin: 14px;
+        margin-bottom: 14px;
+    margin-bottom: 39px;
+}
+.about-item {
+    max-width: 685px;
+    margin: auto;
+}
+.about-item h1 {
+    font-size: 50px;
+    margin-bottom: 14px;
+}
+
+/* services */
+.services{
+    margin-top: 20px ; 
+}
+
+.service-item{
+    width: 31.3%;
+    float: left;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 30px 10px;
+}
+.service-item span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #2980b9;
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px 0px  30px 0px;
+}
+.service-item h2{
+    font-size: 35px;
+}
+.service-item p{
+    font-size: 20px;
+}
+
+/* blog */
+.blog-container{
+    margin-top: 50px;
+}
+.left-container{
+    float: left;
+    width: 60%;
+}
+.left-item{
+    margin-bottom: 30px;
+}
+
+.left-item img{
+    float: left;
+    width :160px;
+    height: auto;
+    margin-right: 15px;
+
+}
+.right-container{
+    float: right;
+    width: 35%;
+}
+
+.right-container h2 {
+    font-size: 40px;
+    border-bottom: 2px solid #dddd;
+    margin-bottom: 10px;
+}
+.right-container ul {
+    list-style: none;
+}
+.right-container ul li {
+    font-size: 20px;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.footer{
+    background: #2c3e50;
+    padding: 15px ;
+
+}
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-left p{
+    font-size: 17px;
+    color: #dddd;
+}
+.footer-right{
+    float: right;
+    width: 60%;
+    
+}
+.footer-right ul{
+    text-align: right;
+}
+.footer-right ul li{
+    display: inline-block;
+}
+.footer-right ul li a{
+    color: #ddd;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: left;
+  
+}
+.footer-right ul li:hover a{
+    
+    transform: translate(10px );
+    color: orange;
+}
